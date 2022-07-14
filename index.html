@@ -17,7 +17,7 @@
         <header class="cabeçalho">
             <div class="container">
                 <input type="checkbox" id="menu" class="container__botao">
-                <label for= "menu">
+                <label for= "menu" class="container__rotulo">
                     <span class="cabeçalho__menu-hamburguer container__imagem"></span>
                 </label>
                 <ul class="lista-menu">
@@ -44,7 +44,7 @@
 
             <ul class="opções">
                 <input type="checkbox" id="opções-menu" class="opções__botão">
-                <label for="opções-menu">
+                <label for="opções-menu" class="opções__rotulo">
                     <li class="opções__item">Categorias</li>
                 </label>
 
@@ -72,8 +72,14 @@
 
             <div class="container">
                 <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
-                <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-                <a href="#"><img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
+                <a href="#" class="container__link">
+                    <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                    <p class="container__texto">Minha Sacola</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem">
+                    <p class="container__texto">Meu Perfil</p>
+                </a>
             </div>
         </header>
 
@@ -85,6 +91,7 @@
         <section class="carrocel">
             <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
                             <!-- Slider main container -->
+                <div class="carrocel__container">
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-pagination"></div>
@@ -128,11 +135,13 @@
                         <a href="#" class="botões__ancora">Saiba mais</a>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class=”carrossel”>
             <h2 class="carrossel__titulo">Mais Vendidos</h2>
 
+            <div class="carrocel__container"> 
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <!-- If we need pagination -->
@@ -182,6 +191,7 @@
                     <a href="#" class="botões__ancora">Saiba mais</a>
                 </div>
             </div>
+        </div>
         </section>
 
         <section class="tópicos">
